@@ -1,6 +1,11 @@
 # be_social
 
-A new Flutter project.
+A social network designed for lonely people who want to step out of their zone.
+
+# Features
+- Login / Register
+- SSO with Google
+- Event listing and booking
 
 ## Getting Started
 
