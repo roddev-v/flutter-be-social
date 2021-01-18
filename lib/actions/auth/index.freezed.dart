@@ -22,9 +22,9 @@ class _$LoginTearOff {
   }
 
 // ignore: unused_element
-  LoginSuccessful successful(AppUser appUser) {
+  LoginSuccessful successful(AppUser user) {
     return LoginSuccessful(
-      appUser,
+      user,
     );
   }
 
@@ -45,13 +45,13 @@ mixin _$Login {
   @optionalTypeArgs
   Result when<Result extends Object>(
     Result $default(String email, String password), {
-    @required Result successful(AppUser appUser),
+    @required Result successful(AppUser user),
     @required Result error(Object error),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>(
     Result $default(String email, String password), {
-    Result successful(AppUser appUser),
+    Result successful(AppUser user),
     Result error(Object error),
     @required Result orElse(),
   });
@@ -154,7 +154,7 @@ class _$Login$ implements Login$ {
   @optionalTypeArgs
   Result when<Result extends Object>(
     Result $default(String email, String password), {
-    @required Result successful(AppUser appUser),
+    @required Result successful(AppUser user),
     @required Result error(Object error),
   }) {
     assert($default != null);
@@ -167,7 +167,7 @@ class _$Login$ implements Login$ {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>(
     Result $default(String email, String password), {
-    Result successful(AppUser appUser),
+    Result successful(AppUser user),
     Result error(Object error),
     @required Result orElse(),
   }) {
@@ -221,7 +221,7 @@ abstract class $LoginSuccessfulCopyWith<$Res> {
   factory $LoginSuccessfulCopyWith(
           LoginSuccessful value, $Res Function(LoginSuccessful) then) =
       _$LoginSuccessfulCopyWithImpl<$Res>;
-  $Res call({AppUser appUser});
+  $Res call({AppUser user});
 }
 
 /// @nodoc
@@ -236,37 +236,37 @@ class _$LoginSuccessfulCopyWithImpl<$Res> extends _$LoginCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object appUser = freezed,
+    Object user = freezed,
   }) {
     return _then(LoginSuccessful(
-      appUser == freezed ? _value.appUser : appUser as AppUser,
+      user == freezed ? _value.user : user as AppUser,
     ));
   }
 }
 
 /// @nodoc
 class _$LoginSuccessful implements LoginSuccessful {
-  const _$LoginSuccessful(this.appUser) : assert(appUser != null);
+  const _$LoginSuccessful(this.user) : assert(user != null);
 
   @override
-  final AppUser appUser;
+  final AppUser user;
 
   @override
   String toString() {
-    return 'Login.successful(appUser: $appUser)';
+    return 'Login.successful(user: $user)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is LoginSuccessful &&
-            (identical(other.appUser, appUser) ||
-                const DeepCollectionEquality().equals(other.appUser, appUser)));
+            (identical(other.user, user) ||
+                const DeepCollectionEquality().equals(other.user, user)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(appUser);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(user);
 
   @override
   $LoginSuccessfulCopyWith<LoginSuccessful> get copyWith =>
@@ -276,26 +276,26 @@ class _$LoginSuccessful implements LoginSuccessful {
   @optionalTypeArgs
   Result when<Result extends Object>(
     Result $default(String email, String password), {
-    @required Result successful(AppUser appUser),
+    @required Result successful(AppUser user),
     @required Result error(Object error),
   }) {
     assert($default != null);
     assert(successful != null);
     assert(error != null);
-    return successful(appUser);
+    return successful(user);
   }
 
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>(
     Result $default(String email, String password), {
-    Result successful(AppUser appUser),
+    Result successful(AppUser user),
     Result error(Object error),
     @required Result orElse(),
   }) {
     assert(orElse != null);
     if (successful != null) {
-      return successful(appUser);
+      return successful(user);
     }
     return orElse();
   }
@@ -330,9 +330,9 @@ class _$LoginSuccessful implements LoginSuccessful {
 }
 
 abstract class LoginSuccessful implements Login {
-  const factory LoginSuccessful(AppUser appUser) = _$LoginSuccessful;
+  const factory LoginSuccessful(AppUser user) = _$LoginSuccessful;
 
-  AppUser get appUser;
+  AppUser get user;
   $LoginSuccessfulCopyWith<LoginSuccessful> get copyWith;
 }
 
@@ -397,7 +397,7 @@ class _$LoginError implements LoginError {
   @optionalTypeArgs
   Result when<Result extends Object>(
     Result $default(String email, String password), {
-    @required Result successful(AppUser appUser),
+    @required Result successful(AppUser user),
     @required Result error(Object error),
   }) {
     assert($default != null);
@@ -410,7 +410,7 @@ class _$LoginError implements LoginError {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>(
     Result $default(String email, String password), {
-    Result successful(AppUser appUser),
+    Result successful(AppUser user),
     Result error(Object error),
     @required Result orElse(),
   }) {

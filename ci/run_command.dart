@@ -23,6 +23,7 @@ final String reset = hasColor ? '\x1B[0m' : '';
 final String redLine = '$red━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$reset';
 
 bool fileFilter(String it) =>
+    !it.endsWith('.freezed.dart') &&
     it.endsWith('.dart') && //
     it != '.dart_tool/build/entrypoint/build.dart' &&
     !it.endsWith('.g.dart') &&
