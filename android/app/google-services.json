@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015122673752",
+    "project_id": "be-social-a6a78",
+    "storage_bucket": "be-social-a6a78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015122673752:android:c805635128888d9e730a2d",
+        "android_client_info": {
+          "package_name": "com.example.be_social"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015122673752-45aaadkl0eqv58gmnfmsd9b0959poqrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQBSDBCsCJub-GJBf_tAoyuZoxKFwieIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015122673752-45aaadkl0eqv58gmnfmsd9b0959poqrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
