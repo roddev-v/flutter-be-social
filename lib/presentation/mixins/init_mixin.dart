@@ -15,10 +15,8 @@ mixin InitMixin<S extends StatefulWidget> on State<S> {
   }
 
   Future<void> _init() async {
-    final List<dynamic> result = await Future.wait<dynamic>(<Future<void>>[
-      init(),
-      Future<void>.delayed(const Duration(seconds: 3))
-    ]);
+    final List<dynamic> result =
+        await Future.wait<dynamic>(<Future<void>>[init(), Future<void>.delayed(const Duration(seconds: 3))]);
     _completer.complete(result[0] as Store<AppState>);
   }
 

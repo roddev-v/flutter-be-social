@@ -2,7 +2,7 @@ import 'package:be_social/actions/auth/index.dart';
 import 'package:be_social/actions/index.dart';
 import 'package:be_social/models/auth/index.dart';
 import 'package:be_social/models/index.dart';
-import 'package:be_social/services/auth_service.dart';
+import 'package:be_social/services/index.dart';
 import 'package:meta/meta.dart';
 import 'package:redux_epics/redux_epics.dart';
 import 'package:rxdart/rxdart.dart';

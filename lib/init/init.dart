@@ -1,6 +1,6 @@
 import 'package:be_social/epics/app_epics.dart';
 import 'package:be_social/reducers/app_reducer.dart';
-import 'package:be_social/services/auth_service.dart';
+import 'package:be_social/services/index.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';

@@ -5,13 +5,11 @@ abstract class AppState implements Built<AppState, AppStateBuilder> {
         b.auth = AuthState.initialState().toBuilder();
       });
 
-  factory AppState.fromJson(dynamic json) =>
-      serializers.deserializeWith(serializer, json);
+  factory AppState.fromJson(dynamic json) => serializers.deserializeWith(serializer, json);
 
   AppState._();
 
-  Map<String, dynamic> get json =>
-      serializers.serializeWith(serializer, this) as Map<String, dynamic>;
+  Map<String, dynamic> get json => serializers.serializeWith(serializer, this) as Map<String, dynamic>;
 
   static Serializer<AppState> get serializer => _$appStateSerializer;
 

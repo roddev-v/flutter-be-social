@@ -6,6 +6,6 @@ class AppRoutes {
   static String home = '/';
 
   static Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
-    home: (BuildContext context) => const Home()
+    home: (BuildContext context) => const Home(),
   };
 }

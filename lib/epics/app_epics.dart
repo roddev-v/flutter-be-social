@@ -1,6 +1,6 @@
 import 'package:be_social/epics/auth_epics.dart';
 import 'package:be_social/models/index.dart';
-import 'package:be_social/services/auth_service.dart';
+import 'package:be_social/services/index.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:redux_epics/redux_epics.dart';
 
