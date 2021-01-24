@@ -28,11 +28,11 @@ class LoginPage extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       'Glad to see you again',
-                      style: TextStyle(fontSize: 18.0),
+                      style: const TextStyle(fontSize: 18.0),
                     ),
                     const Text(
                       'Welcome!',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 28.0,
                           color: CustomColors.accent),
