@@ -31,6 +31,7 @@ class _BeSocialState extends State<BeSocial> with InitMixin<BeSocial> {
             throw snapshot.error;
           }
           return const MaterialApp(
+            debugShowCheckedModeBanner: false,
             home: Scaffold(
               body: Center(
                 child: FlutterLogo(size: 150.0),
