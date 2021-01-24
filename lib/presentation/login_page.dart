@@ -25,14 +25,14 @@ class LoginPage extends StatelessWidget {
               Container(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
+                  children: const <Widget>[
                     Text(
                       'Glad to see you again',
-                      style: const TextStyle(fontSize: 18.0),
+                      style: TextStyle(fontSize: 18.0),
                     ),
-                    const Text(
+                    Text(
                       'Welcome!',
-                      style: const TextStyle(
+                      style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 28.0,
                           color: CustomColors.accent),
