@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return UserContainer(
       builder: (BuildContext builder, AppUser user) {
-        return user == null ? LoginPage() : const HomePage();
+        return user == null ? const LoginPage() : const HomePage();
       },
     );
   }
