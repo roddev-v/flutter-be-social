@@ -29,6 +29,7 @@ class _BeSocialState extends State<BeSocial> with InitMixin<BeSocial> {
               child: MaterialApp(
                   title: 'be social',
                   theme: ThemeData.light(),
+                  debugShowCheckedModeBanner: false,
                   routes: AppRoutes.routes));
         } else {
           if (snapshot.hasError) {

@@ -120,7 +120,7 @@ class LoginPage extends StatelessWidget {
                 child: Text.rich(
                   TextSpan(
                     style: const TextStyle(fontSize: 16.0),
-                    text: "Don\'t have an accout? ",
+                    text: "Don\'t have an account? ",
                     children: <TextSpan>[
                       TextSpan(
                           text: 'Register',
