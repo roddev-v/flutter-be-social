@@ -25,7 +25,11 @@ class _BeSocialState extends State<BeSocial> with InitMixin<BeSocial> {
         if (snapshot.hasData) {
           final Store<AppState> store = snapshot.data;
           return StoreProvider<AppState>(
-              store: store, child: MaterialApp(title: 'be social', theme: ThemeData.dark(), routes: AppRoutes.routes));
+              store: store,
+              child: MaterialApp(
+                  title: 'be social',
+                  theme: ThemeData.light(),
+                  routes: AppRoutes.routes));
         } else {
           if (snapshot.hasError) {
             throw snapshot.error;
